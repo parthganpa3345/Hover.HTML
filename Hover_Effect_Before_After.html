@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 100px;
+            width: 150px;
+            background: gray;
+            margin: 100px auto;
+            border-radius: 50px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 100px;
+            overflow: hidden;
+            position: relative;
+            z-index: 0;
+        }
+        
+        .main::before {
+            content: "";
+            position: absolute;
+            top: ;
+            left: -100%;
+            height: 100px;
+            width: 150px;
+            background: blue;
+            transition: 2s;
+            z-index: -1;
+        }
+        
+        .main:hover::before {
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        Parth
+    </div>
+
+</body>
+
+</html>
