@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 100px;
+            width: 150px;
+            /* background: lightcoral; */
+            color: brown;
+            text-align: center;
+            /* line-height: 50px; */
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 100px auto;
+            position: relative;
+            font-size: 30px;
+            z-index: 0;
+            overflow: hidden;
+            box-shadow: 3px 5px 10px red, -3px -5px 10px green, 3px 5px 10px purple inset, -3px -5px 10px blue inset;
+        }
+        
+        .effect {
+            height: 100px;
+            width: 150px;
+            background: linear-gradient(red, blue, purple);
+            position: absolute;
+            top: ;
+            left: -100%;
+            transition: 2s;
+            z-index: -1;
+            /* box-shadow: 10px 10px 30px black inset; */
+        }
+        
+        .main:hover .effect {
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">Parth
+        <div class="effect"></div>
+    </div>
+
+</body>
+
+</html>
